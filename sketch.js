@@ -22,12 +22,30 @@ function draw(){
   background("pink");
   if(contestantCount === 2){
     //chame o método de atualização que está dentro da classe quiz (questionário)
-    quiz.update(); 
-  
+
+      quiz.update(1);
   }
   if(gameState === 1){
-    clear();
+
     //chame o método play que está dentro da classe quiz (questionário)
-   quiz.play()
+    clear();
+    quiz.play();
   }
 }
+
+
+
+// function draw(){
+//   background("pink");
+//   if(contestantCount === 2){
+//     //chame o método de atualização que está dentro da classe quiz (questionário)
+
+//       quiz.update(1);
+//   }
+//   if(gameState === 1){
+
+//     //chame o método play que está dentro da classe quiz (questionário)
+//     clear();
+//     quiz.play();
+//   }
+// }
